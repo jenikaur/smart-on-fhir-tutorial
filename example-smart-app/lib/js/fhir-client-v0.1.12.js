@@ -16895,10 +16895,11 @@ var jwt = require('jsonwebtoken');
 var BBClient = module.exports =  {debug: true}
 
 function urlParam(p, forceArray) {
+	console.log("urlparam:", p, forceArray);
   if (forceArray === undefined) {
     forceArray = false;
   }
-
+console.log("location:",location);
   var query = location.search.substr(1);
   var data = query.split("&");
   var result = [];
