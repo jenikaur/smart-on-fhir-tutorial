@@ -34,6 +34,7 @@
           if (typeof patient.name[0] !== 'undefined') {
             console.log("check:",patient.name[0]);
             fname = patient.name[0].given && patient.name[0].given.join(' ');
+            lname = patient.name[0].family;
             // lname = patient.name[0].family && patient.name[0].family.join(' ');
           }
 
