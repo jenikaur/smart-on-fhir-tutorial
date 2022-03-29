@@ -17255,7 +17255,7 @@ BBClient.ready = function(input, callback, errback){
 };
 
 function providers(fhirServiceUrl, provider, callback, errback){
-
+console.log("in providers:",fhirServiceUrl, provider);
   // Shim for pre-OAuth2 launch parameters
   if (isBypassOAuth()){
     process.nextTick(function(){
